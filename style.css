@@ -137,11 +137,15 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and (min-width:480px) {
+  .big {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap
+  }
   .bigitem {
     flex: 1;
     justify-content:center;
     margin: 10px;
-  
   }
   header {
     display:flex;

@@ -134,18 +134,54 @@ footer p {
   padding: 20px;
 }
 
+.bigitem {
+  min-width:0;
+  width:100%
+}
+#location {
+  min-width:0;
+
+}
 /* -------  Media Query ------- */
 
 @media all and (min-width:480px) {
+  .destroy {
+    display:flex;
+    width:auto;
+    min-width: none;
+  }
+  
+  form input {
+
+    margin-bottom: 20px;
+    width: 100%;
+  
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content:center;
+    margin: 0px;
+min-width:0;
+width:100%
+  }
   .big {
     display:flex;
     flex-direction: row;
-    flex-wrap:wrap
+  justify-content:space-between
   }
+   .location {
+    min-width:0
+   }
   .bigitem {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     justify-content:center;
     margin: 10px;
+min-width:0;
+width:100%
   }
   header {
     display:flex;
@@ -222,5 +258,11 @@ footer p {
 @media all and (max-width:400px) {
   .logo{
     font-size:50px
+  }
+
+}
+@media all and (min-width:480px) and (max-width:600px) {
+  form button {
+    font-size: 4vw;
   }
 }
